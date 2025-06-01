@@ -15,6 +15,11 @@ const RSS_FEEDS = [
         url: "https://xtech.nikkei.com/rss/xtech-at.rdf",
         category: "メディア"
     }
+    {
+    name: "ホンダ",
+    url: "https://www.honda.co.jp/news/rss/index.rdf",
+    category: "自動車メーカー"
+    }
 ];
 
 // グローバル変数
