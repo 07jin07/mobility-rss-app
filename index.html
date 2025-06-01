@@ -3,45 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>モビリティ業界RSS情報収集アプリ - 先進版</title>
+    <title>モビリティ業界RSS情報収集アプリ</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- カスタムカーソル -->
-    <div id="customCursor" class="custom-cursor"></div>
-    
-    <!-- ローディングオーバーレイ -->
-    <div id="loadingOverlay" class="loading-overlay">
-        <div class="loading-content">
-            <div class="loading-spinner"></div>
-            <h2>モビリティ情報を読み込み中...</h2>
-            <p>最新のニュースとトレンドをお届けします</p>
-        </div>
-    </div>
-
     <div class="app-container">
         <!-- ヘッダー -->
-        <header class="header">
+        <header class="app-header">
             <div class="header-content">
-                <h1 class="header-title">モビリティ業界情報ハブ</h1>
-                <p class="header-subtitle">次世代自動車技術の最前線</p>
-                <div class="header-stats">
-                    <div class="stat-badge">
-                        <span class="stat-number" id="headerTotalArticles">0</span>
-                        <span class="stat-label">記事</span>
+                <h1 class="app-title">
+                    <span class="title-icon">🚗</span>
+                    モビリティ業界ニュース
+                </h1>
+                <div class="header-controls">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" class="search-input" placeholder="キーワード検索...">
+                        <button class="search-btn">🔍</button>
                     </div>
-                    <div class="stat-badge">
-                        <span class="stat-number" id="headerCompanies">8</span>
-                        <span class="stat-label">企業</span>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- 検索・フィルターコントロール -->
-        <section class="controls-section">
-            <div class="glass-card controls-card">
-                <div class="search-container">
-                    <div class="search-box">
-                        <input type="text" id="searchInput" placehold
+                    <button class="theme-toggle" id="themeToggle">🌙</button>
+                 
